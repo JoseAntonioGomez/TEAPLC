@@ -73,7 +73,7 @@ namespace SISTEMA_TEAPLC.UI
                 GestorPlanillas.ConsultarPlanilla(planilla, dgvPlanilla);
                 dgvPlanilla.Columns[0].Visible = false;
                 dgvPlanilla.Columns[1].HeaderText = "Nombre";
-                dgvPlanilla.Columns[2].HeaderText = "Cedula";
+                dgvPlanilla.Columns[2].HeaderText = "Cédula";
                 dgvPlanilla.Columns[3].HeaderText = "Numero de Horas";
                 dgvPlanilla.Columns[4].HeaderText = "Precio por hora";
                 dgvPlanilla.Columns[5].HeaderText = "Total Bruto";
