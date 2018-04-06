@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,23 +50,169 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmColaborador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmColaborador.Designer.cs">
+      <DependentUpon>frmColaborador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestorActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestorActividades.Designer.cs">
+      <DependentUpon>frmGestorActividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestorBancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestorBancos.Designer.cs">
+      <DependentUpon>frmGestorBancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestorCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestorCuentas.Designer.cs">
+      <DependentUpon>frmGestorCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestorEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestorEmpresas.Designer.cs">
+      <DependentUpon>frmGestorEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestorPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestorPrestamos.Designer.cs">
+      <DependentUpon>frmGestorPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestorProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestorProyectos.Designer.cs">
+      <DependentUpon>frmGestorProyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGestorTiposForro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestorTiposForro.Designer.cs">
+      <DependentUpon>frmGestorTiposForro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCancelarPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelarPrestamos.Designer.cs">
+      <DependentUpon>frmCancelarPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlanilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlanilla.Designer.cs">
+      <DependentUpon>frmPlanilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProyectos.Designer.cs">
+      <DependentUpon>frmProyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportesPlanillas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportesPlanillas.Designer.cs">
+      <DependentUpon>frmReportesPlanillas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportesProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportesProyectos.Designer.cs">
+      <DependentUpon>frmReportesProyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="TEAPLC_BD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TEAPLC_BD.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmColaborador.resx">
+      <DependentUpon>frmColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestorActividades.resx">
+      <DependentUpon>frmGestorActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestorBancos.resx">
+      <DependentUpon>frmGestorBancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestorCuentas.resx">
+      <DependentUpon>frmGestorCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestorEmpresas.resx">
+      <DependentUpon>frmGestorEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestorPrestamos.resx">
+      <DependentUpon>frmGestorPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestorProyectos.resx">
+      <DependentUpon>frmGestorProyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestorTiposForro.resx">
+      <DependentUpon>frmGestorTiposForro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelarPrestamos.resx">
+      <DependentUpon>frmCancelarPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlanilla.resx">
+      <DependentUpon>frmPlanilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProyectos.resx">
+      <DependentUpon>frmProyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportesPlanillas.resx">
+      <DependentUpon>frmReportesPlanillas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportesProyectos.resx">
+      <DependentUpon>frmReportesProyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePlanillaEmpleados.rdlc" />
+    <EmbeddedResource Include="ReporteTrabajosProyecto.rdlc" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -72,9 +222,159 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TEAPLC_BD.xsc">
+      <DependentUpon>TEAPLC_BD.xsd</DependentUpon>
+    </None>
+    <None Include="TEAPLC_BD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TEAPLC_BD.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TEAPLC_BD.xss">
+      <DependentUpon>TEAPLC_BD.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SISTEMA_TEAPLC.LN\SISTEMA_TEAPLC.LN.csproj">
+      <Project>{0587e13e-1fa1-4eb9-9666-0d408ff1c073}</Project>
+      <Name>SISTEMA_TEAPLC.LN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SISTEMA_TEAPLC.MODEL\SISTEMA_TEAPLC.MODEL.csproj">
+      <Project>{8b9b4aa5-0057-4010-ade9-d7cae2321e66}</Project>
+      <Name>SISTEMA_TEAPLC.MODEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Search-Male-User48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Add-Male-User48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Edit-Male-User48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Remove-Male-User48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Add-Male-User32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Edit-Male-User32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Remove-Male-User32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\man256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\FAQ24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\keys24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\man24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\sales-report24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\my_docs_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\search48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\search32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\add232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\edit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\delete232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Save32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\add224.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\add124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\printer-orange32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\printer-blue32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Trash-can32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\refresh32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\calenda48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\coin-us-dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Data-List-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\User-yellow256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\company_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\my_docs_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Sales-report128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\company_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\cash %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\credit-cards-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Event-search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
